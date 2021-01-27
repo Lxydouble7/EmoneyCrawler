@@ -51,7 +51,7 @@ for m in dict:
             # print(request.text)
             data = request.text
 
-            ans = re.findall(r'"f\d+":"(.+?)"', data)
+            ans = re.findall(r'"f\d+":"(.*?)"', data)
             if ans == []:
                 break
             # file_name = '.\data\基金持仓\\' + i + '.csv'
